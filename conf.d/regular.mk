@@ -139,6 +139,20 @@ distro/regular-gnome: distro/.regular-desktop mixin/regular-gnome \
 	+plymouth use/browser/epiphany \
 	use/live-install/vnc/listen; @:
 
+distro/regular-gnome-atomic: distro/.regular-x11 mixin/regular-gnome \
+	+plymouth use/browser/firefox mixin/regular-desktop \
+	use/firmware/laptop +systemd +systemd-optimal +vmguest \
+	use/services/bluetooth-enable use/live/rescue \
+	use/vmguest/dri use/branding/full \
+	use/os-installer
+	@$(call add,THE_PACKAGES,glibc-locales) # for locales :)
+	@$(call set,GRUB_DEFAULT,live)
+	@$(call set,SYSLINUX_DEFAULT,live)
+ifeq (,$(filter-out i586 x86_64,$(ARCH)))
+	@$(call add,THE_PACKAGES,xorg-drv-vmware) # for virtualbox with VMSVGA
+endif
+	@$(call add,THE_PACKAGES,bluez)
+
 distro/regular-lxqt: distro/.regular-gtk mixin/regular-lxqt +plymouth; @:
 
 distro/regular-deepin: distro/.regular-gtk mixin/regular-deepin; @:

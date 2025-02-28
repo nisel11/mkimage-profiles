@@ -144,7 +144,7 @@ distro/regular-gnome-atomic: distro/.regular-x11 mixin/regular-gnome \
 	use/firmware/laptop +systemd +systemd-optimal +vmguest \
 	use/services/bluetooth-enable use/live/rescue \
 	use/vmguest/dri use/branding/full \
-	use/os-installer
+	use/gnome-atomic-customization use/os-installer
 	@$(call add,THE_PACKAGES,glibc-locales) # for locales :)
 	@$(call set,GRUB_DEFAULT,live)
 	@$(call set,SYSLINUX_DEFAULT,live)

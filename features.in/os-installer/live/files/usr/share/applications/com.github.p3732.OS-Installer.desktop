@@ -49,7 +49,7 @@ Comment[fa]=نصب سیستم‌عامل
 Comment=Install an Operating System
 Exec=os-installer
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-Icon=com.github.p3732.OS-Installer
+Icon=/usr/share/icons/hicolor/scalable/apps/com.github.p3732.OS-Installer.svg
 Terminal=false
 Type=Application
 Categories=GTK;

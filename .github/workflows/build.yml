@@ -1,0 +1,11 @@
+name: Build live-rescue.iso
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build image
+        uses: nisel11/alt-image-builder@1.0.0

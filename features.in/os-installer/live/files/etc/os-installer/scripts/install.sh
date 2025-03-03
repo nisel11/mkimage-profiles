@@ -127,7 +127,7 @@ mount_partitions() {
 
 install_system() {
     UUID_BOOT=$(sudo blkid -s UUID -o value "$BOOT_PART") || quit_on_err "Не удалось получить UUID boot"
-    [[ $OSI_USE_ENCRYPTION -eq 0 ]] && export RAW_ROOT=$(sudo blkid -o device -t PARTLABEL=alt-root) || quit_on_err "Root раздел не найден"
+    [[ $OSI_USE_ENCRYPTION -eq 0 ]] && export RAW_ROOT=$(sudo blkid -o device -t PARTLABEL=alt-root)
     UUID_ROOT=$(sudo blkid -s UUID -o value "$RAW_ROOT") || quit_on_err "Не удалось получить UUID root"
 
     BOOTC_CMD="bootc install to-filesystem --skip-fetch-check --disable-selinux "

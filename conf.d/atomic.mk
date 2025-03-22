@@ -1,6 +1,6 @@
 ifeq (distro,$(IMAGE_CLASS))
 
-distro/regular-gnome-atomic-test: distro/.regular-x11 mixin/regular-gnome \
+distro/regular-gnome-atomic: distro/.regular-x11 mixin/regular-gnome \
 	+plymouth use/browser/firefox mixin/regular-desktop \
 	use/firmware/laptop +systemd +systemd-optimal +vmguest \
 	use/services/bluetooth-enable use/live/rescue \

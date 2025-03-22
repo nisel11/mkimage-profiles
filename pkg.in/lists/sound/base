@@ -1,6 +1,0 @@
-amixer
-alsa-utils
-aplay
-test-audio
-
-alsa-set-initial-options

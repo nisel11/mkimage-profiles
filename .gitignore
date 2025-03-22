@@ -1,5 +1,0 @@
-*~
-.*.swp
-build
-image.in/files/*
-!image.in/files/.empty

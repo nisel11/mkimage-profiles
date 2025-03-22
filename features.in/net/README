@@ -1,7 +1,0 @@
-=== features.in/net ===
-
-Эта фича конфигурирует базовую поддержку сети, включая нужную подсистему
-(etcnet, NetworkManager поверх etcnet или connman).
-
-Используйте TARGET_HOSTNAME для определения имени узла (файлы
-/etc/sysconfig/network и /etc/hostname).

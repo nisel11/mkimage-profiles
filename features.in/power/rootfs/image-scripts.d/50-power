@@ -1,6 +1,0 @@
-#!/bin/sh -efu
-
-# provide kernel interface for ACPI power button
-if [ `arch` != e2k -a -x /etc/init.d/acpid ]; then
-	grep -qsx button /etc/modules || echo button >> /etc/modules
-fi

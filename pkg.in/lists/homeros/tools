@@ -1,6 +1,0 @@
-su
-sudo
-net-tools
-openssh-server
-amixer
-alsa-utils

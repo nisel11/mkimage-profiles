@@ -1,9 +1,0 @@
-#!/bin/sh -efu
-
-installer_steps=/usr/share/install2/installer-steps
-
-[ -f "$installer_steps" ] || exit 1
-rpm -q installer-livecd-install || exit 0
-
-grep -q installer-livecd-install "$installer_steps" ||
-	sed -i '/vm/a\installer-livecd-install' "$installer_steps"

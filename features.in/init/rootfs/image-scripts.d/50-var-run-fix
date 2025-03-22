@@ -1,6 +1,0 @@
-#!/bin/sh
-
-[ ! -L /var/run ] && rm -r /var/run && ln -s ../run /var/run
-[ ! -L /var/lock ] && rm -r /var/lock && ln -s ../run/lock /var/lock
-
-:

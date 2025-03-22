@@ -1,9 +1,0 @@
-#!/bin/sh
-# generate current plaintext rpm pubring representation
-KEYDIR="/usr/lib/alt-gpgkeys"
-
-if [ -d "$KEYDIR" ]; then
-	gpg --export --armor --homedir="$KEYDIR" >$WORKDIR/RPM-GPG-KEY
-else
-	echo "** warning: skipping RPM-GPG-KEY generation, $KEYDIR missing" >&2
-fi

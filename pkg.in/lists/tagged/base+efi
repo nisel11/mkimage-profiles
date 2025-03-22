@@ -1,6 +1,0 @@
-gdisk
-parted
-fatresize
-dosfstools
-grub2-efi
-efibootmgr

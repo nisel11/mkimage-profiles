@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build image
-        uses: nisel11/alt-image-builder@1.1.1
+        uses: nisel11/alt-image-builder@2.0.0
         with:
           image: ${{ github.event.inputs.image }}

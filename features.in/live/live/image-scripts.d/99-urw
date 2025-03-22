@@ -1,4 +1,0 @@
-#!/bin/sh
-# URW fonts are responsible for sub-par website text rendering usually...
-
-rm -f /etc/X11/fontpath.d/type1-urw:pri=40

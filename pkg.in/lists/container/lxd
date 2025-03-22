@@ -1,8 +1,0 @@
-# LXC/LXD
-lxc
-#lxc-devel
-lxcfs
-lxd
-
-# For storage creation
-python3

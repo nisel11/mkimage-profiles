@@ -1,4 +1,0 @@
-#!/bin/sh
-# filter worker make stdout for report scripts
-
-grep '^trace:building ' | uniq

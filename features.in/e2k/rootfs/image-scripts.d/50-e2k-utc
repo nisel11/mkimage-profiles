@@ -1,6 +1,0 @@
-#!/bin/sh
-# borrowed from installer-feature-local-clock
-
-. shell-config
-
-shell_config_set /etc/sysconfig/clock UTC true

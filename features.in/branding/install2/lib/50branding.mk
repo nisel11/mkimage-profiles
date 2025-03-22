@@ -1,2 +1,0 @@
-IMAGE_PACKAGES_REGEXP += $(call branding, release \
-				$(STAGE2_BRANDING) $(INSTALL2_BRANDING))

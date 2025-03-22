@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# FIXME: move somewhere else
-#echo 'FEATURES += nfs' >> /etc/initrd.mk

@@ -1,3 +1,0 @@
-kernel/fs/cifs/cifs.ko
-kernel/fs/smb
-kernel/crypto/cmac.ko
